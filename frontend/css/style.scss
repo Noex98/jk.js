@@ -1,0 +1,11 @@
+// Globals      @import 'partials/';
+@import 'partials/global';
+@import 'partials/variables';
+
+
+// Views        @import '../src/views/';
+@import '../src/views/Home/Home';
+@import '../src/views/Err404/Err404';
+
+
+// Components   @import '../src/components/';

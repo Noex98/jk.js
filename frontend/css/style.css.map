@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,CAAC,CAAC;EACE,MAAM,EAAC,CAAC;EACR,OAAO,EAAC,CAAC;EACT,UAAU,EAAE,UAAU;CACzB;;AAED,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,OAAO;EACf,KAAK,EAAE,OAAO;EACd,eAAe,EAAE,OAAO;CAC3B",
+    "sources": [
+        "style.scss",
+        "partials/_global.scss",
+        "partials/_variables.scss",
+        "../src/views/Home/_Home.scss",
+        "../src/views/Err404/_Err404.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
