@@ -34,6 +34,7 @@ export default (() => {
     window.navigateTo = (path, options) => {
         if (path !== location.pathname){
             window.history.pushState(null, null, path)
+            console.log(1)
         }
         render(options)
     }

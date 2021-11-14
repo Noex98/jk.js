@@ -11,10 +11,8 @@ export default function Home(){
         jk.home.incrementNum = () => {
             setNum(prevNum => prevNum + 1)
         }
-        
-    }, [])
 
-    
+    }, [])
 
     return (/*html*/`
         <span>Click for state change: </span>

@@ -1,3 +1,3 @@
 export function ReRender(){
-    navigateTo(null, {scroll:false})
+    navigateTo(location.pathname, {scroll:false})
 }

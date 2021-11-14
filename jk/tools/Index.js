@@ -1,4 +1,4 @@
-// Index's development tools
+// Index's tools
 
 export {useEffect} from './UseEffect.js'
 export * from './Link.js'
