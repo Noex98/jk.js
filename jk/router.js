@@ -1,5 +1,5 @@
 import routes from './src/routes.js'
-import { handleWillUnmount, handleDidMount} from './tools/Lifecycle.js'
+import { handleEffects, handleCleanups} from './tools/UseEffect.js'
 
 export default (() => {
 
@@ -9,7 +9,7 @@ export default (() => {
     function render(options){
 
         // willUnmount triggered
-        handleWillUnmount()
+        handleCleanups()
 
         // Mount
         ;(() => {
@@ -27,7 +27,7 @@ export default (() => {
         })()
 
         // didMount triggered
-        handleDidMount()
+        handleEffects()
     }
 
     // Global navigation function

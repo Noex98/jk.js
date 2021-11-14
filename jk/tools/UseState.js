@@ -29,11 +29,10 @@ class state {
     }
 }
 
+export function useState(storage, initState){
 
-export function useState(initState, key){
-
-    if (!jk.ALL_STATES[key]){
-        jk.ALL_STATES[key] = new state(initState)
+    if (!storage[0].state[storage[1]]){
+        storage[0].state[storage[1]] = new state(initState)
     }
-    return [jk.ALL_STATES[key].getState(), jk.ALL_STATES[key].setState]
+    return [storage[0].state[storage[1]].getState(), storage[0].state[storage[1]].setState]
 }

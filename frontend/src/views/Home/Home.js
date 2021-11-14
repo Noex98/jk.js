@@ -1,22 +1,24 @@
-import { useState, componentDidMount, Link } from "/jk.js"
+import { useState, useEffect, Link } from "/jk.js"
 
 export default function Home(){
 
-    const [num, setNum] = useState(0, 'Home_num')
+    const [num, setNum] = useState([this, 'num'], 0)
 
-    componentDidMount(() => {
+    useEffect([this, 'init'], () => {
 
-        let btn = document.querySelector('button')
+        jk.home = {}
 
-        btn.addEventListener('click', () => {
-            setNum(prevState => prevState + 1)
-        })
+        jk.home.incrementNum = () => {
+            setNum(prevNum => prevNum + 1)
+        }
+        
+    }, [])
 
-    })
+    
 
     return (/*html*/`
         <span>Click for state change: </span>
-        <button>Number + 1</button>
+        <button onclick="jk.home.incrementNum()">Number + 1</button>
         <div>${num === 0 ? 'My number' : num}</div>
         ${Link('/2', 'link to error')}
     `)
