@@ -1,15 +1,24 @@
 {
-  "name": "jk.js",
+  "name": "knickering",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "start": "node app",
     "startdev": "nodemon app"
   },
   "author": "Noex98",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Noex98/jk.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Noex98/jk.js/issues"
+  },
+  "homepage": "https://github.com/Noex98/jk.js#readme",
+  "description": ""
 }
